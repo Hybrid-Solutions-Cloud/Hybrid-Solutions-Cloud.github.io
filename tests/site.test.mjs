@@ -14,10 +14,11 @@ test("exports the Labs landing page", async () => {
   assert.match(html, /Project Marvin/i);
   assert.match(html, /Hybrid Infrastructure Toolkit/i);
   assert.match(html, /Azure Monitor ITSM/i);
-  assert.match(html, /catalog\.public_projects.{0,80}>6</is);
+  assert.match(html, /Hybrid Health Monitoring/i);
+  assert.match(html, /catalog\.public_projects.{0,80}>7</is);
   assert.doesNotMatch(html, /status-active/i);
   assert.equal((html.match(/status-preview/g) ?? []).length, 3);
-  assert.equal((html.match(/status-in-the-lab/g) ?? []).length, 3);
+  assert.equal((html.match(/status-in-the-lab/g) ?? []).length, 4);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 

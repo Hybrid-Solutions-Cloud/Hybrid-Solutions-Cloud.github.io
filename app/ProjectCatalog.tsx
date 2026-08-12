@@ -97,6 +97,19 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/azure-monitor-itsm",
     accent: "violet",
   },
+  {
+    number: "07",
+    name: "Hybrid Health Monitoring",
+    eyebrow: "Know what is healthy before it is not.",
+    description:
+      "SCOM and Azure Monitor health models for Hyper-V and Azure Local, bringing infrastructure signals into one practical monitoring toolkit.",
+    status: "In the lab",
+    category: "Cloud ops",
+    tags: ["SCOM", "Azure Monitor", "Azure Local"],
+    site: "/hybrid-health-monitoring/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/hybrid-health-monitoring",
+    accent: "amber",
+  },
 ];
 
 const filters = [
@@ -189,7 +202,7 @@ export function ProjectCatalog() {
             <span className="console-live">LIVE</span>
           </div>
           <div className="console-body">
-            <p><span>01</span> catalog.public_projects <b>6</b></p>
+            <p><span>01</span> catalog.public_projects <b>7</b></p>
             <p><span>02</span> build.current_state <b>IN_PROGRESS</b></p>
             <p><span>03</span> ideas.open_tabs <b>TOO_MANY</b></p>
             <p><span>04</span> perfection.required <b>FALSE</b></p>
