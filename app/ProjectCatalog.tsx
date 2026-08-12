@@ -71,6 +71,32 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/project-marvin",
     accent: "lime",
   },
+  {
+    number: "05",
+    name: "Hybrid Infrastructure Toolkit",
+    eyebrow: "Build the lab. Rebuild it on purpose.",
+    description:
+      "Reusable patterns and automation for repeatable hybrid infrastructure labs, from Azure foundations and nested Hyper-V to cluster services and demo-day operations.",
+    status: "Active",
+    category: "Cloud ops",
+    tags: ["PowerShell", "Azure", "Hyper-V"],
+    site: "/hybrid-infra-toolkit/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/hybrid-infra-toolkit",
+    accent: "cyan",
+  },
+  {
+    number: "06",
+    name: "Azure Monitor ITSM",
+    eyebrow: "Alerts in. Incidents out. No mystery glue.",
+    description:
+      "A repeatable Azure Monitor-to-ServiceNow integration built with Logic Apps, managed identity, Key Vault, and infrastructure-as-code deployment options.",
+    status: "Active",
+    category: "Cloud ops",
+    tags: ["Azure Monitor", "ServiceNow", "Logic Apps"],
+    site: "/azure-monitor-itsm/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/azure-monitor-itsm",
+    accent: "violet",
+  },
 ];
 
 const filters = [
@@ -163,7 +189,7 @@ export function ProjectCatalog() {
             <span className="console-live">LIVE</span>
           </div>
           <div className="console-body">
-            <p><span>01</span> catalog.public_projects <b>4</b></p>
+            <p><span>01</span> catalog.public_projects <b>6</b></p>
             <p><span>02</span> build.current_state <b>IN_PROGRESS</b></p>
             <p><span>03</span> ideas.open_tabs <b>TOO_MANY</b></p>
             <p><span>04</span> perfection.required <b>FALSE</b></p>

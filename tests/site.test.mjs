@@ -12,6 +12,9 @@ test("exports the Labs landing page", async () => {
   assert.match(html, /Homestead Foundry/i);
   assert.match(html, /Vault Prospector/i);
   assert.match(html, /Project Marvin/i);
+  assert.match(html, /Hybrid Infrastructure Toolkit/i);
+  assert.match(html, /Azure Monitor ITSM/i);
+  assert.match(html, /catalog\.public_projects.{0,80}>6</is);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
