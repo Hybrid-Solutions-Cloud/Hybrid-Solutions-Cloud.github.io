@@ -15,8 +15,6 @@ test("exports the Labs landing page", async () => {
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
-test("ships the custom-domain marker", async () => {
-  const cname = await readFile(new URL("out/CNAME", root), "utf8");
-  assert.equal(cname.trim(), "labs.hybridsolutions.cloud");
+test("ships the static Pages marker", async () => {
   await access(new URL("out/.nojekyll", root));
 });

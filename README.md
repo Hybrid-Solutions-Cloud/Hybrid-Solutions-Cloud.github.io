@@ -21,11 +21,11 @@ npm test
 
 ## Publishing
 
-The repository is designed to be published as the `Hybrid-Solutions-Cloud/Hybrid-Solutions-Cloud.github.io` organization site. A GitHub Actions workflow builds the static export and deploys it to GitHub Pages whenever `main` changes.
+The repository is published as the `Hybrid-Solutions-Cloud/Hybrid-Solutions-Cloud.github.io` organization site. A GitHub Actions workflow builds the static export and deploys it to GitHub Pages whenever `main` changes.
 
-GitHub applies an organization site's custom domain to that organization's project sites. With `labs.hybridsolutions.cloud` configured on the organization site, existing project sites remain available at paths such as:
+The Cloudflare Worker in `worker/index.js` serves that GitHub Pages origin only on `labs.hybridsolutions.cloud`. Because the Worker preserves the incoming path, existing GitHub project sites remain available at paths such as:
 
 - `https://labs.hybridsolutions.cloud/homestead-foundry/`
 - `https://labs.hybridsolutions.cloud/azure-scout/`
 
-The only intended DNS change is a DNS-only `CNAME` for `labs.hybridsolutions.cloud` pointing to `hybrid-solutions-cloud.github.io`. Do not modify the apex domain or unrelated records.
+The Worker custom domain owns only `labs.hybridsolutions.cloud`. Do not modify the apex domain or unrelated records.
