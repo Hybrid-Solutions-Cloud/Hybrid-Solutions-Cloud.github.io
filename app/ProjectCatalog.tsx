@@ -23,7 +23,7 @@ const projects: Project[] = [
     eyebrow: "See everything. Own your cloud.",
     description:
       "Inventory Azure and Entra ID, assess against CAF and WAF, and turn a sprawling tenant into a self-contained report you can actually use.",
-    status: "Active",
+    status: "Preview",
     category: "Cloud ops",
     tags: ["PowerShell", "Azure", "Assessment"],
     site: "/azure-scout/",
@@ -37,7 +37,7 @@ const projects: Project[] = [
     eyebrow: "Build AI infrastructure with receipts.",
     description:
       "An open knowledge and automation center for Azure AI Foundry—from model decisions and infrastructure as code to deployment and verification.",
-    status: "Active",
+    status: "Preview",
     category: "AI & automation",
     tags: ["Azure AI", "Bicep", "Agents"],
     site: "/homestead-foundry/",
@@ -77,7 +77,7 @@ const projects: Project[] = [
     eyebrow: "Build the lab. Rebuild it on purpose.",
     description:
       "Reusable patterns and automation for repeatable hybrid infrastructure labs, from Azure foundations and nested Hyper-V to cluster services and demo-day operations.",
-    status: "Active",
+    status: "In the lab",
     category: "Cloud ops",
     tags: ["PowerShell", "Azure", "Hyper-V"],
     site: "/hybrid-infra-toolkit/",
@@ -90,7 +90,7 @@ const projects: Project[] = [
     eyebrow: "Alerts in. Incidents out. No mystery glue.",
     description:
       "A repeatable Azure Monitor-to-ServiceNow integration built with Logic Apps, managed identity, Key Vault, and infrastructure-as-code deployment options.",
-    status: "Active",
+    status: "In the lab",
     category: "Cloud ops",
     tags: ["Azure Monitor", "ServiceNow", "Logic Apps"],
     site: "/azure-monitor-itsm/",
