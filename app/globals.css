@@ -54,9 +54,7 @@ button { font: inherit; }
 }
 
 .brand { display: inline-flex; align-items: center; gap: 13px; }
-.brand-mark { position: relative; display: grid; grid-template-columns: repeat(2, 9px); gap: 3px; transform: rotate(45deg); }
-.brand-mark span { width: 9px; height: 9px; display: block; background: var(--acid); }
-.brand-mark span:nth-child(3) { grid-column: 2; }
+.brand-logo { width: 48px; height: 48px; flex: 0 0 auto; object-fit: contain; }
 .brand-name { font-size: 0.9rem; font-weight: 650; letter-spacing: -0.01em; }
 .brand-name strong { color: var(--acid); font-family: var(--mono); font-size: 0.76rem; letter-spacing: 0.08em; text-transform: uppercase; }
 
@@ -176,7 +174,7 @@ button { font: inherit; }
 .about-stamp small { max-width: 110px; margin-top: 8px; text-align: center; font-family: var(--mono); font-size: .45rem; line-height: 1.4; letter-spacing: .1em; }
 
 footer { min-height: 112px; padding: 28px 4.5vw; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 30px; background: var(--acid); border-top: 1px solid var(--ink); font-family: var(--mono); font-size: .65rem; letter-spacing: .05em; text-transform: uppercase; }
-.footer-brand .brand-mark span { background: var(--ink); }
+.footer-brand .brand-logo { width: 40px; height: 40px; }
 .footer-brand .brand-name strong { color: var(--ink); }
 footer p { margin: 0; text-align: center; }
 footer > div { display: flex; justify-content: flex-end; gap: 24px; }

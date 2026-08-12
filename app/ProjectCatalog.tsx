@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 
 type Project = {
@@ -137,11 +138,7 @@ export function ProjectCatalog() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Hybrid Solutions Cloud Labs home">
-          <span className="brand-mark" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
+          <Image className="brand-logo" src="/hsc-labs-logo.png" alt="" width={48} height={48} priority />
           <span className="brand-name">
             Hybrid Solutions Cloud <strong>Labs</strong>
           </span>
@@ -313,7 +310,7 @@ export function ProjectCatalog() {
 
       <footer>
         <a className="brand footer-brand" href="#top">
-          <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
+          <Image className="brand-logo" src="/hsc-labs-logo.png" alt="" width={40} height={40} />
           <span className="brand-name">HSC <strong>Labs</strong></span>
         </a>
         <p>Experiments welcome. Buzzwords require evidence.</p>
