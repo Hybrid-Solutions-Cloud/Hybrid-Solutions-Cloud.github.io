@@ -111,6 +111,19 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/hybrid-health-monitoring",
     accent: "amber",
   },
+  {
+    number: "08",
+    name: "Hyper-V Surveyor",
+    eyebrow: "Plan the fabric before you rack it.",
+    description:
+      "A browser-based planning workspace for sizing Hyper-V clusters, comparing SAN, S2D, and hybrid designs, and choosing a management plane with evidence-backed guidance.",
+    status: "In the lab",
+    category: "Cloud ops",
+    tags: ["Hyper-V", "Windows Server", "S2D"],
+    site: "/hyperv-surveyor/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-surveyor",
+    accent: "lime",
+  },
 ];
 
 const filters = [
@@ -199,7 +212,7 @@ export function ProjectCatalog() {
             <span className="console-live">LIVE</span>
           </div>
           <div className="console-body">
-            <p><span>01</span> catalog.public_projects <b>7</b></p>
+            <p><span>01</span> catalog.public_projects <b>8</b></p>
             <p><span>02</span> build.current_state <b>IN_PROGRESS</b></p>
             <p><span>03</span> ideas.open_tabs <b>TOO_MANY</b></p>
             <p><span>04</span> perfection.required <b>FALSE</b></p>
