@@ -124,6 +124,19 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-surveyor",
     accent: "lime",
   },
+  {
+    number: "09",
+    name: "Stagecoach",
+    eyebrow: "One login. Every VM. One click.",
+    description:
+      "Sign in once with Entra ID, see every VM you can actually reach across your tenants, and one click opens the right RDP or SSH session through Bastion, Arc, or direct access.",
+    status: "In the lab",
+    category: "Cloud ops",
+    tags: ["PowerShell", "Azure", "Remote access"],
+    site: "/stagecoach/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/stagecoach",
+    accent: "cyan",
+  },
 ];
 
 const filters = [
@@ -212,7 +225,7 @@ export function ProjectCatalog() {
             <span className="console-live">LIVE</span>
           </div>
           <div className="console-body">
-            <p><span>01</span> catalog.public_projects <b>8</b></p>
+            <p><span>01</span> catalog.public_projects <b>9</b></p>
             <p><span>02</span> build.current_state <b>IN_PROGRESS</b></p>
             <p><span>03</span> ideas.open_tabs <b>TOO_MANY</b></p>
             <p><span>04</span> perfection.required <b>FALSE</b></p>

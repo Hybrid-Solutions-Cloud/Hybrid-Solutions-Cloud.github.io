@@ -16,12 +16,14 @@ test("exports the Labs landing page", async () => {
   assert.match(html, /Azure Monitor ITSM/i);
   assert.match(html, /Hybrid Health Monitoring/i);
   assert.match(html, /Hyper-V Surveyor/i);
+  assert.match(html, /Stagecoach/i);
   assert.match(html, /href="\/hyperv-surveyor\/"/i);
+  assert.match(html, /href="\/stagecoach\/"/i);
   assert.match(html, /hsc-labs-logo\.png/i);
-  assert.match(html, /catalog\.public_projects.{0,80}>8</is);
+  assert.match(html, /catalog\.public_projects.{0,80}>9</is);
   assert.doesNotMatch(html, /status-active/i);
   assert.equal((html.match(/status-preview/g) ?? []).length, 3);
-  assert.equal((html.match(/status-in-the-lab/g) ?? []).length, 5);
+  assert.equal((html.match(/status-in-the-lab/g) ?? []).length, 6);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
