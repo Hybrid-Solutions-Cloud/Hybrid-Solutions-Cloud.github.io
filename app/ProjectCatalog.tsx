@@ -124,6 +124,19 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-surveyor",
     accent: "lime",
   },
+  {
+    number: "09",
+    name: "Stagecoach",
+    eyebrow: "One identity hub. Every reachable machine. One click.",
+    description:
+      "A native Windows launcher that turns every Azure VM, Azure Arc server, and Azure Local machine your Entra accounts can reach into one filterable list, then opens RDP or SSH in a single click.",
+    status: "Preview",
+    category: "Cloud ops",
+    tags: ["Windows", "Azure Arc", "Bastion"],
+    site: "/stagecoach/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/stagecoach",
+    accent: "cyan",
+  },
 ];
 
 const filters = [
@@ -212,7 +225,7 @@ export function ProjectCatalog() {
             <span className="console-live">LIVE</span>
           </div>
           <div className="console-body">
-            <p><span>01</span> catalog.public_projects <b>8</b></p>
+            <p><span>01</span> catalog.public_projects <b>{projects.length}</b></p>
             <p><span>02</span> build.current_state <b>IN_PROGRESS</b></p>
             <p><span>03</span> ideas.open_tabs <b>TOO_MANY</b></p>
             <p><span>04</span> perfection.required <b>FALSE</b></p>
