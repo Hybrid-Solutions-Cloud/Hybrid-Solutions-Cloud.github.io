@@ -1,0 +1,53 @@
+# Mail-posture audit configuration.
+#
+# Copy this file to config/mail-posture.yml and fill in the REPLACE-WITH values.
+# The real file is gitignored. Secrets are referenced via keyvault:// URIs and
+# are never embedded here.
+
+resolver:
+  # DNS-over-HTTPS endpoint used for public record lookups. Must accept
+  # ?name=<fqdn>&type=<type> and return application/dns-json.
+  doh_endpoint: https://cloudflare-dns.com/dns-query
+
+cloudflare:
+  # API token with Zone:Read + DNS:Read on every zone listed below.
+  # Format: keyvault://<vault-name>/<secret-name>
+  api_token: keyvault://kv-hcs-vault-01/REPLACE-WITH-CLOUDFLARE-TOKEN-SECRET-NAME
+
+  # Cloudflare API v4 base URL. Rarely changes.
+  api_base_url: https://api.cloudflare.com/client/v4
+
+# One block per apex domain to audit.
+domains:
+    # Apex domain name exactly as the zone is named in Cloudflare.
+  - name: REPLACE-WITH-APEX-DOMAIN
+
+    # HCS tenant registry shortName that owns this domain. Informational —
+    # recorded in the report so drift can be traced back to a tenant.
+    tenant: REPLACE-WITH-TENANT-SHORTNAME
+
+    # Whether this domain legitimately sends mail. When false, the audit
+    # instead requires a null MX and a hard-fail SPF that authorises nothing.
+    sends_mail: true
+
+    # SPF mechanisms that must be present when sends_mail is true.
+    expected_spf_includes:
+      - spf.protection.outlook.com
+
+    # Required SPF all-qualifier: '-all' (hard fail) or '~all' (soft fail).
+    expected_spf_all: '-all'
+
+    # Required DMARC policy: none, quarantine, or reject.
+    expected_dmarc_policy: reject
+
+    # Mailboxes permitted in the DMARC rua= tag. An address outside this list
+    # is reported as FAIL: aggregate reports for a tenant-owned domain must not
+    # be delivered to a mailbox outside that tenant.
+    allowed_rua_addresses:
+      - REPLACE-WITH-TENANT-REPORT-MAILBOX
+
+    # DKIM selectors expected to resolve. Exchange Online publishes selector1
+    # and selector2 as CNAMEs into onmicrosoft.com.
+    expected_dkim_selectors:
+      - selector1
+      - selector2
