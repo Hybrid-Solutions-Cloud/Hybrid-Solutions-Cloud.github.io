@@ -34,17 +34,16 @@ const projects: Project[] = [
   },
   {
     number: "02",
-    name: "Homestead Foundry",
-    eyebrow: "Build AI infrastructure with receipts.",
+    name: "Hyper-V Surveyor",
+    eyebrow: "Plan the fabric before you rack it.",
     description:
-      "An open knowledge and automation center for Azure AI Foundry—from model decisions and infrastructure as code to deployment and verification.",
+      "A browser-based planning workspace for sizing Hyper-V clusters, comparing SAN, S2D, and hybrid designs, and choosing a management plane with evidence-backed guidance.",
     status: "Preview",
-    category: "AI & automation",
-    tags: ["Azure AI", "Bicep", "Agents"],
-    site: "/homestead-foundry/",
-    repo: "https://github.com/Hybrid-Solutions-Cloud/homestead-foundry",
-    accent: "violet",
-    featured: true,
+    category: "Cloud ops",
+    tags: ["Hyper-V", "Windows Server", "S2D"],
+    site: "/hyperv-surveyor/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-surveyor",
+    accent: "lime",
   },
   {
     number: "03",
@@ -61,6 +60,44 @@ const projects: Project[] = [
   },
   {
     number: "04",
+    name: "Hyper-V Trailwright",
+    eyebrow: "Shape the platform. Chart the deployment.",
+    description: "Design Hyper-V clusters, management, storage, networking and operations, then export validated configuration and deployment handoffs.",
+    status: "In the lab",
+    category: "Cloud ops",
+    tags: ["React", "Hyper-V", "Platform design"],
+    site: "/hyperv-trailwright/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-trailwright",
+    accent: "lime",
+  },
+  {
+    number: "05",
+    name: "Azure Local Trailwright",
+    eyebrow: "Turn sizing into a complete platform design.",
+    description: "Design Azure Local deployments, review Surveyor sizing, validate architecture choices, and export reports and configuration inputs for your automation.",
+    status: "In the lab",
+    category: "Cloud ops",
+    tags: ["React", "Azure Local", "Platform design"],
+    site: "/azurelocal-trailwright/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/azurelocal-trailwright",
+    accent: "cyan",
+  },
+  {
+    number: "06",
+    name: "Homestead Foundry",
+    eyebrow: "Build AI infrastructure with receipts.",
+    description:
+      "An open knowledge and automation center for Azure AI Foundry—from model decisions and infrastructure as code to deployment and verification.",
+    status: "Preview",
+    category: "AI & automation",
+    tags: ["Azure AI", "Bicep", "Agents"],
+    site: "/homestead-foundry/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/homestead-foundry",
+    accent: "violet",
+    featured: true,
+  },
+  {
+    number: "07",
     name: "Project Marvin",
     eyebrow: "Calendar sprawl, reluctantly solved.",
     description:
@@ -73,7 +110,7 @@ const projects: Project[] = [
     accent: "lime",
   },
   {
-    number: "05",
+    number: "08",
     name: "Hybrid Infrastructure Toolkit",
     eyebrow: "Build the lab. Rebuild it on purpose.",
     description:
@@ -86,7 +123,7 @@ const projects: Project[] = [
     accent: "cyan",
   },
   {
-    number: "06",
+    number: "09",
     name: "Azure Monitor ITSM",
     eyebrow: "Alerts in. Incidents out. No mystery glue.",
     description:
@@ -99,7 +136,7 @@ const projects: Project[] = [
     accent: "violet",
   },
   {
-    number: "07",
+    number: "10",
     name: "Hybrid Health Monitoring",
     eyebrow: "Know what is healthy before it is not.",
     description:
@@ -112,20 +149,7 @@ const projects: Project[] = [
     accent: "amber",
   },
   {
-    number: "08",
-    name: "Hyper-V Surveyor",
-    eyebrow: "Plan the fabric before you rack it.",
-    description:
-      "A browser-based planning workspace for sizing Hyper-V clusters, comparing SAN, S2D, and hybrid designs, and choosing a management plane with evidence-backed guidance.",
-    status: "In the lab",
-    category: "Cloud ops",
-    tags: ["Hyper-V", "Windows Server", "S2D"],
-    site: "/hyperv-surveyor/",
-    repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-surveyor",
-    accent: "lime",
-  },
-  {
-    number: "09",
+    number: "11",
     name: "Stagecoach",
     eyebrow: "One login. Every VM. One click.",
     description:
@@ -137,30 +161,7 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/stagecoach",
     accent: "cyan",
   },
-  {
-    number: "10",
-    name: "Hyper-V Trailwright",
-    eyebrow: "Shape the platform. Chart the deployment.",
-    description: "Design Hyper-V clusters, management, storage, networking and operations, then export validated configuration and deployment handoffs.",
-    status: "Preview",
-    category: "Cloud ops",
-    tags: ["React", "Hyper-V", "Platform design"],
-    site: "/hyperv-trailwright/",
-    repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-trailwright",
-    accent: "lime",
-  },
-  {
-    number: "11",
-    name: "Azure Local Trailwright",
-    eyebrow: "Turn sizing into a complete platform design.",
-    description: "Design Azure Local deployments, review Surveyor sizing, validate architecture choices, and export reports and configuration inputs for your automation.",
-    status: "Preview",
-    category: "Cloud ops",
-    tags: ["React", "Azure Local", "Platform design"],
-    site: "/azurelocal-trailwright/",
-    repo: "https://github.com/Hybrid-Solutions-Cloud/azurelocal-trailwright",
-    accent: "cyan",
-  },];
+];
 
 const filters = [
   "All",
