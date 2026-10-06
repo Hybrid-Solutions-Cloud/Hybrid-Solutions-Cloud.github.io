@@ -137,7 +137,30 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/stagecoach",
     accent: "cyan",
   },
-];
+  {
+    number: "10",
+    name: "Hyper-V Trailwright",
+    eyebrow: "Shape the platform. Chart the deployment.",
+    description: "Design Hyper-V clusters, management, storage, networking and operations, then export validated configuration and deployment handoffs.",
+    status: "Preview",
+    category: "Cloud ops",
+    tags: ["React", "Hyper-V", "Platform design"],
+    site: "/hyperv-trailwright/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-trailwright",
+    accent: "lime",
+  },
+  {
+    number: "11",
+    name: "Azure Local Trailwright",
+    eyebrow: "Turn sizing into a complete platform design.",
+    description: "Design Azure Local deployments, review Surveyor sizing, validate architecture choices, and export reports and configuration inputs for your automation.",
+    status: "Preview",
+    category: "Cloud ops",
+    tags: ["React", "Azure Local", "Platform design"],
+    site: "/azurelocal-trailwright/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/azurelocal-trailwright",
+    accent: "cyan",
+  },];
 
 const filters = [
   "All",
@@ -225,7 +248,7 @@ export function ProjectCatalog() {
             <span className="console-live">LIVE</span>
           </div>
           <div className="console-body">
-            <p><span>01</span> catalog.public_projects <b>9</b></p>
+            <p><span>01</span> catalog.public_projects <b>{projects.length}</b></p>
             <p><span>02</span> build.current_state <b>IN_PROGRESS</b></p>
             <p><span>03</span> ideas.open_tabs <b>TOO_MANY</b></p>
             <p><span>04</span> perfection.required <b>FALSE</b></p>
