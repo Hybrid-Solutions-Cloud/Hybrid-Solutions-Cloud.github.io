@@ -37,7 +37,7 @@ const projects: Project[] = [
     name: "Homestead Foundry",
     eyebrow: "Build AI infrastructure with receipts.",
     description:
-      "An open knowledge and automation center for Azure AI Foundry—from model decisions and infrastructure as code to deployment and verification.",
+      "An open knowledge and automation center for Azure AI Foundry-from model decisions and infrastructure as code to deployment and verification.",
     status: "Preview",
     category: "AI & automation",
     tags: ["Azure AI", "Bicep", "Agents"],
@@ -137,7 +137,30 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/stagecoach",
     accent: "cyan",
   },
-];
+  {
+    number: "10",
+    name: "Hyper-V Trailwright",
+    eyebrow: "Shape the platform. Chart the deployment.",
+    description: "Design Hyper-V clusters, management, storage, networking and operations, then export validated configuration and deployment handoffs.",
+    status: "Preview",
+    category: "Cloud ops",
+    tags: ["React", "Hyper-V", "Platform design"],
+    site: "/hyperv-trailwright/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/hyperv-trailwright",
+    accent: "lime",
+  },
+  {
+    number: "11",
+    name: "Azure Local Trailwright",
+    eyebrow: "Turn sizing into a complete platform design.",
+    description: "Design Azure Local deployments, review Surveyor sizing, validate architecture choices, and export reports and configuration inputs for your automation.",
+    status: "Preview",
+    category: "Cloud ops",
+    tags: ["React", "Azure Local", "Platform design"],
+    site: "/azurelocal-trailwright/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/azurelocal-trailwright",
+    accent: "cyan",
+  },];
 
 const filters = [
   "All",
@@ -179,7 +202,7 @@ export function ProjectCatalog() {
             target="_blank"
             rel="noreferrer"
           >
-            GitHub <span aria-hidden="true">↗</span>
+            GitHub <span aria-hidden="true">?</span>
           </a>
         </nav>
       </header>
@@ -206,7 +229,7 @@ export function ProjectCatalog() {
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#projects">
-              Explore the work <span aria-hidden="true">↓</span>
+              Explore the work <span aria-hidden="true"></span>
             </a>
             <a
               className="button button-ghost"
@@ -214,7 +237,7 @@ export function ProjectCatalog() {
               target="_blank"
               rel="noreferrer"
             >
-              View the organization <span aria-hidden="true">↗</span>
+              View the organization <span aria-hidden="true">?</span>
             </a>
           </div>
         </div>
@@ -225,7 +248,7 @@ export function ProjectCatalog() {
             <span className="console-live">LIVE</span>
           </div>
           <div className="console-body">
-            <p><span>01</span> catalog.public_projects <b>9</b></p>
+            <p><span>01</span> catalog.public_projects <b>{projects.length}</b></p>
             <p><span>02</span> build.current_state <b>IN_PROGRESS</b></p>
             <p><span>03</span> ideas.open_tabs <b>TOO_MANY</b></p>
             <p><span>04</span> perfection.required <b>FALSE</b></p>
@@ -241,9 +264,9 @@ export function ProjectCatalog() {
 
       <section className="manifesto-strip" aria-label="Lab principles">
         <p><span>BUILD</span> the useful thing</p>
-        <i aria-hidden="true">✦</i>
+        <i aria-hidden="true">?</i>
         <p><span>SHOW</span> the real work</p>
-        <i aria-hidden="true">✦</i>
+        <i aria-hidden="true">?</i>
         <p><span>SHIP</span> before perfect</p>
       </section>
 
@@ -255,7 +278,7 @@ export function ProjectCatalog() {
           </div>
           <p>
             Public projects only. Status labels are honest, links are live, and
-            nothing has been quietly declared “done” just to make the grid look tidy.
+            nothing has been quietly declared "done" just to make the grid look tidy.
           </p>
         </div>
 
@@ -298,11 +321,11 @@ export function ProjectCatalog() {
               </ul>
               <div className="card-links">
                 <a className="project-link" href={project.site}>
-                  Open project <span aria-hidden="true">→</span>
+                  Open project <span aria-hidden="true"></span>
                 </a>
                 <a href={project.repo} target="_blank" rel="noreferrer">
                   Source <span className="sr-only">for {project.name}</span>
-                  <span aria-hidden="true">↗</span>
+                  <span aria-hidden="true">?</span>
                 </a>
               </div>
             </article>
@@ -313,7 +336,7 @@ export function ProjectCatalog() {
       <section className="about-section" id="about">
         <div className="about-label">
           <p className="section-index">02 / WHY LABS</p>
-          <span aria-hidden="true">HSC—LABS / 2026</span>
+          <span aria-hidden="true">HSC-LABS / 2026</span>
         </div>
         <div className="about-copy">
           <h2>Built because the problem was annoying enough.</h2>
@@ -324,7 +347,7 @@ export function ProjectCatalog() {
             one useful rabbit hole at a time.
           </p>
           <a href="https://hybridsolutions.cloud" target="_blank" rel="noreferrer">
-            Visit Hybrid Solutions Cloud LLC <span aria-hidden="true">↗</span>
+            Visit Hybrid Solutions Cloud LLC <span aria-hidden="true">?</span>
           </a>
         </div>
         <div className="about-stamp" aria-hidden="true">
@@ -341,8 +364,8 @@ export function ProjectCatalog() {
         </a>
         <p>Experiments welcome. Buzzwords require evidence.</p>
         <div>
-          <a href="https://github.com/Hybrid-Solutions-Cloud" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="https://hybridsolutions.cloud" target="_blank" rel="noreferrer">LLC site ↗</a>
+          <a href="https://github.com/Hybrid-Solutions-Cloud" target="_blank" rel="noreferrer">GitHub ?</a>
+          <a href="https://hybridsolutions.cloud" target="_blank" rel="noreferrer">LLC site ?</a>
         </div>
       </footer>
     </main>
