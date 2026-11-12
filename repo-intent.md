@@ -20,7 +20,7 @@ preserving incoming paths so existing GitHub project sites remain reachable (e.g
 
 - Catalogs and paths to every public project under the org: `homestead-foundry`,
   `azure-scout`, `hybrid-infra-toolkit`, `hybrid-health-monitoring`,
-  `azure-monitor-itsm`, `hyperv-surveyor`, `project-marvin`
+  `azure-monitor-itsm`, `hyperv-surveyor`, `project-marvin`, `wagonmaster`
 
 ## Status
 
