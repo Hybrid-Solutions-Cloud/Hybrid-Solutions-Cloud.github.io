@@ -166,10 +166,10 @@ const projects: Project[] = [
     name: "Wagonmaster",
     eyebrow: "Load the wagons. Lead the move to Azure.",
     description:
-      "Open tools for Azure migrations. The first, Manifest, exports everything an Azure Migrate project knows to CSV and JSON with nothing more than Reader access.",
+      "Open tools for Azure migrations. Manifest exports everything an Azure Migrate project knows with nothing more than Reader access, and Waypoint turns it into a dashboard for moves to Azure or Azure Local.",
     status: "In the lab",
     category: "Cloud ops",
-    tags: ["PowerShell", "Azure Migrate", "Migration"],
+    tags: ["PowerShell", "Azure Migrate", "Azure Local"],
     site: "/wagonmaster/",
     repo: "https://github.com/Hybrid-Solutions-Cloud/wagonmaster",
     accent: "amber",
