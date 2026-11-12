@@ -17,17 +17,19 @@ test("exports the Labs landing page", async () => {
   assert.match(html, /Hybrid Health Monitoring/i);
   assert.match(html, /Hyper-V Surveyor/i);
   assert.match(html, /Stagecoach/i);
+  assert.match(html, /Wagonmaster/i);
   assert.match(html, /Hyper-V Trailwright/i);
   assert.match(html, /Azure Local Trailwright/i);
   assert.match(html, /href=\"\/hyperv-trailwright\/\"/i);
   assert.match(html, /href=\"\/azurelocal-trailwright\/\"/i);
   assert.match(html, /href="\/hyperv-surveyor\/"/i);
   assert.match(html, /href="\/stagecoach\/"/i);
+  assert.match(html, /href="\/wagonmaster\/"/i);
   assert.match(html, /hsc-labs-logo\.png/i);
-  assert.match(html, /catalog\.public_projects.{0,80}>11</is);
+  assert.match(html, /catalog\.public_projects.{0,80}>12</is);
   assert.doesNotMatch(html, /status-active/i);
   assert.equal((html.match(/status-preview/g) ?? []).length, 4);
-  assert.equal((html.match(/status-in-the-lab/g) ?? []).length, 7);
+  assert.equal((html.match(/status-in-the-lab/g) ?? []).length, 8);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 
@@ -38,7 +40,7 @@ test("ships the static Pages marker", async () => {
  test("catalog order and maturity match the published products", async () => {
  const html = await readFile(new URL("out/index.html", root), "utf8");
  const cards = [...html.matchAll(/<article class="project-card[\s\S]*?<\/article>/g)].map(m => m[0]);
- const expected = ["AzureScout","Hyper-V Surveyor","Vault Prospector","Hyper-V Trailwright","Azure Local Trailwright","Homestead Foundry","Project Marvin","Hybrid Infrastructure Toolkit","Azure Monitor ITSM","Hybrid Health Monitoring","Stagecoach"];
+ const expected = ["AzureScout","Hyper-V Surveyor","Vault Prospector","Hyper-V Trailwright","Azure Local Trailwright","Homestead Foundry","Project Marvin","Hybrid Infrastructure Toolkit","Azure Monitor ITSM","Hybrid Health Monitoring","Stagecoach","Wagonmaster"];
  assert.deepEqual(cards.map(card => card.match(/<h3>([^<]+)<\/h3>/)[1]), expected);
  const previews = new Set(["AzureScout","Hyper-V Surveyor","Vault Prospector","Homestead Foundry"]);
  for (const card of cards) {

@@ -161,6 +161,19 @@ const projects: Project[] = [
     repo: "https://github.com/Hybrid-Solutions-Cloud/stagecoach",
     accent: "cyan",
   },
+  {
+    number: "12",
+    name: "Wagonmaster",
+    eyebrow: "Load the wagons. Lead the move to Azure.",
+    description:
+      "Open tools for Azure migrations. The first, Manifest, exports everything an Azure Migrate project knows to CSV and JSON with nothing more than Reader access.",
+    status: "In the lab",
+    category: "Cloud ops",
+    tags: ["PowerShell", "Azure Migrate", "Migration"],
+    site: "/wagonmaster/",
+    repo: "https://github.com/Hybrid-Solutions-Cloud/wagonmaster",
+    accent: "amber",
+  },
 ];
 
 const filters = [
